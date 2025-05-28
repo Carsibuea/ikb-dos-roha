@@ -1,0 +1,17 @@
+<!-- public/404.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Ambil path dan query string
+      const redirectTo = location.pathname + location.search + location.hash;
+      // Redirect ke index.html dengan menyimpan path
+      location.replace("/ikb-dos-roha/index.html?redirect=" + encodeURIComponent(redirectTo));
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
